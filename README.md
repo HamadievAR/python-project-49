@@ -4,6 +4,34 @@
 ### Maintainability Badge
 <a href="https://codeclimate.com/github/HamadievAR/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/f790fd8677d914bac696/maintainability" /></a>
 
+# Brain Games
+
+Программа "Brain Games" представляет собой набор из пяти мини-игр, которые развивают логическое мышление и математические способности.
+
+## Требования
+
+- Python 3.12 или выше
+
+## Установка
+
+1. Клонируйте репозиторий:
+git clone git@github.com:HamadievAR/python-project-49.git
+
+2. Установите зависимости:
+poetry install
+
+## Запуск
+
+Игры запускаются командами:
+
+- `brain-even`
+- `brain-calc`
+- `brain-gcd`
+- `brain-progression`
+- `brain-prime`
+
+Примеры:
+
 ### brain-even
 [![asciicast](https://asciinema.org/a/NKgDVoL4MeRy93GQKEG9XU4Tu.svg)](https://asciinema.org/a/NKgDVoL4MeRy93GQKEG9XU4Tu)
 
@@ -18,3 +46,5 @@
 
 ### brain-prime
 [![asciicast](https://asciinema.org/a/KHUo8o69JxH8ltr80OvQRC760.svg)](https://asciinema.org/a/KHUo8o69JxH8ltr80OvQRC760)
+
+
