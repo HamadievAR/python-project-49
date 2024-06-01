@@ -16,11 +16,15 @@
 
 1. Клонируйте репозиторий:
 
+```text
 git clone git@github.com:HamadievAR/python-project-49.git
+```
 
 2. Установите зависимости:
 
+```text
 poetry install
+```
 
 ## Запуск
 
