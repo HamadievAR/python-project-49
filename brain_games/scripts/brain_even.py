@@ -7,7 +7,7 @@ def is_even(number):
 
 
 def generate_question_and_answer():
-    number = random.randint(1, 100)
+    number = random.randint(1, 1000)
     question = str(number)
     correct_answer = 'yes' if is_even(number) else 'no'
     return question, correct_answer
