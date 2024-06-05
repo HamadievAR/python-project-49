@@ -1,7 +1,6 @@
 import operator
 import random
 
-from brain_games.engine import run_game_engine
 
 DESCRIPTION = 'What is the result of the expression?.'
 
@@ -22,7 +21,3 @@ def generate_question_and_answer():
     expression = f"{num1} {operator_str} {num2}"
     correct_answer = str(apply_operator(operator_str, num1, num2))
     return expression, correct_answer
-
-
-def main():
-    run_game_engine(DESCRIPTION, generate_question_and_answer)

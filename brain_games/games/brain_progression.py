@@ -1,5 +1,4 @@
 import random
-from brain_games.engine import run_game_engine
 
 DESCRIPTION = 'Find the hidden number in the progression.'
 
@@ -20,7 +19,3 @@ def generate_question_and_answer():
     question = ' '.join(map(str, progression))
     correct_answer = str(hidden_value)
     return question, correct_answer
-
-
-def main():
-    run_game_engine(DESCRIPTION, generate_question_and_answer)

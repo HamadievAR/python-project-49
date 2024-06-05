@@ -1,22 +1,8 @@
-# Makefile
-
-install:
+install: 
 	poetry install
 
-brain-calc:
-	poetry run python brain_games/scripts/brain_games_script.py brain-calc
-
-brain-even:
-	poetry run python brain_games/scripts/brain_games_script.py brain-even
-
-brain-gcd:
-	poetry run python brain_games/scripts/brain_games_script.py brain-gcd
-
-brain-prime:
-	poetry run python brain_games/scripts/brain_games_script.py brain-prime
-
-brain-progression:
-	poetry run python brain_games/scripts/brain_games_script.py brain-progression
+brain-games: 
+	poetry run brain-games
 
 build:
 	poetry build
@@ -27,5 +13,23 @@ publish:
 package-install:
 	python3 -m pip install dist/*.whl
 
+package-uninstall:
+	python3 -m pip uninstall --yes dist/*.whl
+
 lint:
 	poetry run flake8 brain_games
+	
+brain-even:
+	poetry run brain-even
+
+brain-calc:
+	poetry run brain-calc
+
+brain-gcd:
+	poetry run brain-gcd
+
+brain-progression:
+	poetry run brain-progression
+
+brain-prime:
+	poetry run brain-prime

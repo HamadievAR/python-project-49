@@ -13,7 +13,7 @@ def is_prime(number):
     return True
 
 
-def generate_prime_question_and_answer():
+def generate_question_and_answer():
     number = random.randint(1, 100)
     question = str(number)
     correct_answer = 'yes' if is_prime(number) else 'no'
@@ -21,4 +21,4 @@ def generate_prime_question_and_answer():
 
 
 def main():
-    run_game_engine(DESCRIPTION, generate_prime_question_and_answer)
+    run_game_engine(DESCRIPTION, generate_question_and_answer)
