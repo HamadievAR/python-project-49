@@ -20,13 +20,39 @@
 git clone git@github.com:HamadievAR/python-project-49.git
 ```
 
-2. Установите зависимости:
+2. Перейдите в директорию проекта:
+
+```text
+cd python-project-49
+```
+
+3. Установите зависимости:
 
 ```text
 poetry install
 ```
 
-## Запуск
+## Сборка и установка пакета
+
+1. Сборка пакета:
+
+```text
+make build
+```
+
+2. Установка пакета:
+
+```text
+make package-install
+```
+
+## Запуск линтера
+
+```text
+make lint
+```
+
+## Запуск игр
 
 Игры запускаются командами:
 
