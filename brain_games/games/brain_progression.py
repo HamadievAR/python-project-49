@@ -1,5 +1,7 @@
 import random
-from brain_games.engine import run_game
+from brain_games.engine import run_game_engine
+
+DESCRIPTION = 'Find the hidden number in the progression.'
 
 
 def generate_progression():
@@ -21,9 +23,4 @@ def generate_question_and_answer():
 
 
 def main():
-    description = 'What number is missing in the progression?'
-    run_game(description, generate_question_and_answer)
-
-
-if __name__ == '__main__':
-    main()
+    run_game_engine(DESCRIPTION, generate_question_and_answer)

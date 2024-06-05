@@ -1,5 +1,7 @@
 import random
-from brain_games.engine import run_game
+from brain_games.engine import run_game_engine
+
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(a, b):
@@ -18,9 +20,4 @@ def generate_question_and_answer():
 
 
 def main():
-    description = 'Find the greatest common divisor of given numbers.'
-    run_game(description, generate_question_and_answer)
-
-
-if __name__ == '__main__':
-    main()
+    run_game_engine(DESCRIPTION, generate_question_and_answer)

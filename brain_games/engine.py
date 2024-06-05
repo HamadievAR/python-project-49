@@ -1,17 +1,13 @@
-import prompt
+"""Games Engine."""
+
+import brain_games.cli
+
 
 CORRECT_ANSWERS_NEEDED = 3
 
 
-def welcome_user():
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    return name
-
-
-def run_game(description, generate_question_and_answer):
-    name = welcome_user()
+def run_game_engine(description, generate_question_and_answer):
+    name = brain_games.cli.welcome_user()
     print(description)
 
     correct_answers_count = 0
@@ -19,7 +15,7 @@ def run_game(description, generate_question_and_answer):
     while correct_answers_count < CORRECT_ANSWERS_NEEDED:
         question, correct_answer = generate_question_and_answer()
         print(f"Question: {question}")
-        user_answer = input("Your answer: ").strip()
+        user_answer = input("Your answer: ").strip().lower()
 
         if user_answer == correct_answer:
             print("Correct!")

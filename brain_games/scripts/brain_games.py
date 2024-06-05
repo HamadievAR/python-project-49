@@ -1,8 +1,12 @@
-from brain_games.engine import welcome_user
+#!/usr/bin/env python3
+"""Main program."""
+
+from brain_games import engine
 
 
 def main():
-    welcome_user()
+    """Make a user interface."""
+    engine.run_game()
 
 
 if __name__ == '__main__':

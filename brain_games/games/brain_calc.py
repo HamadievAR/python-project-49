@@ -1,6 +1,9 @@
-import random
 import operator
-from brain_games.engine import run_game
+import random
+
+from brain_games.engine import run_game_engine
+
+DESCRIPTION = 'What is the result of the expression?.'
 
 
 def apply_operator(operator_str, num1, num2):
@@ -22,9 +25,4 @@ def generate_question_and_answer():
 
 
 def main():
-    description = 'What is the result of the expression?.'
-    run_game(description, generate_question_and_answer)
-
-
-if __name__ == '__main__':
-    main()
+    run_game_engine(DESCRIPTION, generate_question_and_answer)
