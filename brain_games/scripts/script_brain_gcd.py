@@ -8,7 +8,8 @@ from brain_games.games import brain_gcd
 
 def main():
     """Start the "Brain-GCD Game"."""
-    run_game_engine(brain_gcd.DESCRIPTION, brain_gcd.generate_question_and_answer)
+    run_game_engine(brain_gcd.DESCRIPTION,
+                    brain_gcd.generate_question_and_answer)
 
 
 if __name__ == '__main__':
