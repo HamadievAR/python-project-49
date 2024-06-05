@@ -1,13 +1,13 @@
 """Games Engine."""
 
-import brain_games.cli
+from brain_games.cli import welcome_user
 
 
 CORRECT_ANSWERS_NEEDED = 3
 
 
 def run_game_engine(description, generate_question_and_answer):
-    name = brain_games.cli.welcome_user()
+    name = welcome_user()
     print(description)
 
     correct_answers_count = 0
