@@ -3,13 +3,13 @@
 
 
 from brain_games.engine import run_game_engine
-from brain_games.games import brain_calc
+from brain_games.games import calc
 
 
 def main():
     """Start the "Brain-Calc Game"."""
-    run_game_engine(brain_calc.DESCRIPTION,
-                    brain_calc.generate_question_and_answer)
+    run_game_engine(calc.DESCRIPTION,
+                    calc.generate_question_and_answer)
 
 
 if __name__ == '__main__':
